@@ -20,19 +20,31 @@
 }
 .container{
     max-width: 1140px;
-    margin: auto;
+    /* margin: auto; */
+    margin: 30px 150px 120px 150px;
+}
+.bg-color{
+    background-color: #F5F8FF;
 }
 
+.span-color{
+    color: #E95A08;
+}
+.p-text-color{
+    color: F5F8FF;
+}
 
+/* ====================== */
+ /* navbar */
 .navbar{
     justify-content: space-between;
     align-items: center;
-    gap: 590px;
+    gap: 500px;
 }
 
 .nav-links{
     justify-content: space-between;
-    gap: 3.50rem;
+    gap: 3.5rem;
 }
 
 .nav-links li{
@@ -42,5 +54,34 @@
 .nav-links a{
     text-decoration: none;
 }
+
+/* banner part */
+
+.banner-container{
+    align-items: center;
+}
+
+.banner-content{
+    margin-top: 160px;
+    width: 570px;
+    height: 299px;
+}
+.banner-title{
+    font-size: 65px;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 22px;
+}
+
+.banner-img{
+    width: 50%;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+
 
 
