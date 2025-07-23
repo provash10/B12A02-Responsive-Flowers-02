@@ -1,0 +1,46 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-normal{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+/* common styles */
+.display-flex{
+    display: flex;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    gap: 590px;
+}
+
+.nav-links{
+    justify-content: space-between;
+    gap: 3.50rem;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+
