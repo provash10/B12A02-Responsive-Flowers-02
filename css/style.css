@@ -170,10 +170,12 @@
     padding: 20px;
 }
 .sticker-img{
+    height: 250px;
+    width: 250px;
     position: absolute;
     top: 30%;
-    left: 60%;
-    transform: translate(35%, -130%);
+    left: 50%;
+    transform: translate(32%, -110%);
 
 }
 
@@ -186,10 +188,49 @@
     height: 533px;
     background-image: url(../assets/news-letter-bg.png);
     text-align: center;
-    /* position: relative; */
+    position: relative;
+    
 }
 .email-subscribe-content{
-    /* position: absolute; */
+    /* justify-content: center; */
+    /* padding-top: 300px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 830px;
+    height: 141px;
+}
+.email-subscribe-content h3{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+}
+.email-btn{
+    width: 830px;
+    height: 50px;
+    gap: no gap;
+    padding-top: 23px;
+}
+
+.email-btn input{
+    width: 644px;
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+}
+.email-btn button{
+    width: 181px;
+    height: 50px;
+}
+.subscribe-btn{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 55px;
+    
 }
 
 
