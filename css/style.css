@@ -420,34 +420,193 @@
 }
 
 /* ======================================================== */
+/* Mobile Responsive Styles (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Common*/
+    .container {
+        margin: 20px;
+        width: calc(100% - 40px);
+        padding: 0px 15px;
+    }
 
-/* Mobile Responsive */
-.hide{
-    display: none;
-}
-
-/* banner */
-@media screen and (max-width: 576px) {
-    .banner-container{
-        flex-direction: column-reverse;
-        padding: 1rem 0;
+    /* Navbar */
+    .navbar {
+        gap: 0;
+        padding: 15px 0;
     }
-    .banner-content, .banner-img{
-        width: 100%;
-        padding: 0;
+    .nav-links {
+        gap: 0;
     }
-    .banner-content{
-        margin-top: 1.5rem;
-        text-align: center;
+    .nav-links li:not(:last-child) {
+        display: none;
     }
-    .banner-title{
-        font-size: 24px;
-        font-weight: bold;
-    }
-    .banner-description{
+    .nav-links li:last-child a {
+        padding: 8px 12px;
         font-size: 14px;
-        font-weight: 400;
-        margin-top: 1rem;
     }
 
+    /* Banner */
+    .banner-container {
+        flex-direction: column-reverse;
     }
+    .banner-content {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        text-align: left;
+    }
+    .banner-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .banner-description {
+        font-size: 16px;
+    }
+    .banner-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Plants Section */
+    .plants-section h3 {
+        font-size: 32px;
+    }
+    .plants-description {
+        width: 100%;
+        height: auto;
+        padding: 16px 0;
+        font-size: 16px;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px 0;
+        gap: 15px;
+    }
+    .card h4, .card p {
+        font-size: 16px;
+    }
+    .btn-card {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Flowers & Plants Lover */
+    .flowers-plants-part {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .flowers-plants-img, .flowers-plants-content {
+        width: 100%;
+        height: auto;
+    }
+    .flowers-plants-content h3 {
+        word-wrap: break-word;
+        font-size: 32px;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+    .flowers-plants-content p {
+        width: 100%;
+        height: 81px;
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+    .sticker-img {
+        display: none; 
+    }
+
+    /* Latest Deals part */
+    .deals-title {
+        font-size: 32px;
+    }
+    .deals-description {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .deals-image {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .deals-left, .deals-right {
+        width: 100%;
+        height: auto;
+    }
+    .deals-right-1 {
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+        height: 300px;
+    }
+    .deals-left-1 h3, 
+    .deals-left-2 h3 {
+        font-size: 20px;
+    }
+    .deals-right-1 h3 {
+        font-size: 28px;
+    }
+    .deals-btn-1, 
+    .deals-btn-2 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .deals-btn-3 {
+        font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Email Subscribe */
+    .email-subscribe-section {
+        height: 300px;
+    }
+    .email-subscribe-content {
+        width: 100%;
+        height: auto;
+        padding: 0 60px;
+        
+    }
+    .email-subscribe-content h3 {
+        font-size: 28px;
+    }
+    .email-btn {
+        /* width: 321px; */
+        height: 50px;
+        display: flex;
+        /* flex-direction: column; */
+
+    }
+    .email-btn input {
+        width: 260px;
+        margin-bottom: 10px;
+    }
+    .subscribe-btn {
+        width: 80px;
+        height: 50px;
+        padding: 0, 10px;
+    }
+
+    /* Footer */
+    .footer-container {
+        margin: 30px 20px;
+    }
+    .footer-items {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-item {
+        width: 100%;
+    }
+    .footer-item-logo {
+        height: auto;
+    }
+    .footer-logo {
+        width: 150px;
+    }
+    .social-media h3 {
+        text-align: left;
+        margin: 0 0 15px 0;
+    }
+}
